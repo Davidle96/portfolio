@@ -1,0 +1,100 @@
+*{
+    background-color: rgba(26, 13, 34, 1);
+}
+.header{
+    text-align: center;
+    font-size: 70px;
+    color: aliceblue;
+    margin-bottom: 10%;
+}
+/* main */
+.main-section .avarta{
+    display: flex;
+    margin-left: 20%;
+}
+.main-section .avarta img{
+    width: 350px;
+    height: 350px;
+    border-radius: 1000px;
+
+    border: 5px solid;
+    border-radius: 1000px;
+    animation: borderColorChange 12s linear infinite;
+}
+.main-section a{
+    text-decoration: none;
+    color: aliceblue;
+    margin: 10px;
+    font-size: 36px;
+    /* margin-bottom: 100px; */
+    transition: color 0.5s ease-in-out;
+}
+/* intro */
+.main-section .intro{
+    margin: 5%;
+    color: aliceblue;
+    text-align: center;
+}
+.main-section .intro i{
+    font-size: 20px;
+}
+
+/* td{
+    border: 5px solid red;
+} */
+
+
+
+
+
+
+/* code xử lý effect animation */
+/* avarta */
+@keyframes borderColorChange {
+    0% { border-color: #FF0000; }   /* Red */
+    4% { border-color: #FF7F00; }   /* Orange */
+    8% { border-color: #FFFF00; }   /* Yellow */
+    12% { border-color: #7FFF00; }  /* Chartreuse Green */
+    16% { border-color: #00FF00; }  /* Green */
+    20% { border-color: #00FF7F; }  /* Spring Green */
+    24% { border-color: #00FFFF; }  /* Cyan */
+    29% { border-color: #007FFF; }  /* Azure */
+    33% { border-color: #0000FF; }  /* Blue */
+    37% { border-color: #7F00FF; }  /* Violet */
+    41% { border-color: #8B00FF; }  /* Indigo */
+    45% { border-color: #FF00FF; }  /* Magenta */
+    50% { border-color: #FF007F; }  /* Rose */
+    54% { border-color: #FF4500; }  /* Orange Red */
+    58% { border-color: #FF1493; }  /* Deep Pink */
+    62% { border-color: #FF6347; }  /* Tomato */
+    66% { border-color: #FFD700; }  /* Gold */
+    70% { border-color: #ADFF2F; }  /* Green Yellow */
+    75% { border-color: #7FFFD4; }  /* Aquamarine */
+    79% { border-color: #40E0D0; }  /* Turquoise */
+    83% { border-color: #1E90FF; }  /* Dodger Blue */
+    87% { border-color: #BA55D3; }  /* Medium Orchid */
+    91% { border-color: #9400D3; }  /* Dark Violet */
+    95% { border-color: #FF69B4; }  /* Hot Pink */
+    100% { border-color: #FF0000; }  /* Red (again) */
+}
+/* hyberlink */
+.rainbow-text a:hover{
+    font-weight: bold;
+    background: linear-gradient(270deg, 
+        #FF5F6D, #FF7B6E, #FF996F, #FFB770, #FFD571, #FFF372, 
+        #E2FF73, #C5FF74, #A8FF75, #8BFF76, #6EFF77, #51FF78, 
+        #34FF79, #17FF7A, #00FF7B, #00E9A8, #00D2D3, #00BBFF, 
+        #009EFF, #007AFF, #0056FF, #0033FF, #0022FF, #3A1AFF, 
+        #7412FF, #AE0AFF, #E900FF, #FF00E2, #FF00C5, #FF00A8);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow-text 10s ease infinite;
+    background-size: 400%;
+}
+
+@keyframes rainbow-text {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+

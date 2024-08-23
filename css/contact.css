@@ -1,0 +1,87 @@
+*{
+    background-color: rgba(26, 13, 34, 1);
+}
+
+header h1{
+    text-align: center;
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    display: flexbox;
+}
+header a{
+    text-decoration: none;
+}
+/* menu */
+.menu{
+    margin-bottom: 5%;
+}
+.menu h2{
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+}
+
+/* nội dung bên phải */
+.gg-map {
+    /* float: right; */
+    display: flex;
+    margin-right: 5%;
+    width: 50%;
+    margin-right: 0;
+}
+.gg-map img{
+    padding-left: 80%;
+    width: 100%;
+}
+/* nội dung bên trái */
+.contact{
+    display: flex;
+    /* width: 30%; */
+    /* float: left; */
+    color: aliceblue;
+    font-size: 32px;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+.contact img{
+    width: 60px;
+}
+.contact p, a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+
+.more{
+    margin-top: 5%;
+    color: aliceblue;
+    text-align: center ;
+    text-transform: uppercase;
+    /* position: absolute; */
+    width: 100%;
+    /* margin-top: 100%; */
+}
+.more img{
+    height: 80px;
+}
+
+/* change color text style rainbow */
+.rainbow-text h2:hover{
+    font-weight: bold;
+    background: linear-gradient(270deg, 
+        #FF5F6D, #FF7B6E, #FF996F, #FFB770, #FFD571, #FFF372, 
+        #E2FF73, #C5FF74, #A8FF75, #8BFF76, #6EFF77, #51FF78, 
+        #34FF79, #17FF7A, #00FF7B, #00E9A8, #00D2D3, #00BBFF, 
+        #009EFF, #007AFF, #0056FF, #0033FF, #0022FF, #3A1AFF, 
+        #7412FF, #AE0AFF, #E900FF, #FF00E2, #FF00C5, #FF00A8);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow-text 10s ease infinite;
+    background-size: 400%;
+}
+
+@keyframes rainbow-text {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

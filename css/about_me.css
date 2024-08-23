@@ -1,0 +1,160 @@
+*{
+    background-color: rgba(26, 13, 34, 1);
+}
+header h1{
+    text-align: center;
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    display: flexbox;
+}
+header a{
+    text-decoration: none;
+}
+/* menu */
+.menu{
+    margin-bottom: 5%;
+}
+.menu h2{
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+}
+
+/* go home */
+.go_home a{
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    color: white;
+    position: fixed;
+}
+
+/* nôi dung bên trái */
+.left{
+    display: flexbox;
+    width: 30%;
+    /* border: 3px solid rgb(255, 255, 255); */
+    float: left;
+}
+.left .img-avatar{
+    width: 100%;
+    display: block;
+    text-align: center;
+    /* border: 3px solid rgb(255, 255, 255); */
+}
+.left img{
+    width: 200px;
+    /* height: 450px; */
+    border-radius: 50px;
+}
+.left h2{
+    font-size: 48px;
+    color: aliceblue;
+    animation: ColorChange 12s linear infinite;
+    text-align: center;
+}
+.left .hobbise h3{
+    text-align: center;
+    font-size: 36px;
+    color: aliceblue;
+    margin-bottom: 0;
+}
+.left .hobbise ul{
+    margin-top: 0;
+    color: aliceblue;
+    margin-left: 28%;   
+    width: auto;
+    font-size: 28px;
+}
+
+/* nôi dung bên phải */
+.right{
+    width: 69%;
+    /* display: flex; */
+    /* border: 3px solid rgb(255, 255, 255); */
+    float: right;
+}
+.right .content{
+    width: auto;
+    font-size: 32px;
+    padding-right: 10%;
+    margin-top: 0;
+    color: aliceblue;   
+    font-style: italic;
+    text-align: justify;
+}
+.right .content p{
+    margin-top: 0;
+}
+.right .my_img{
+    width: auto;
+    height: 400px;
+    display: block;
+    text-align: left;
+    margin-top: 5%;
+}
+.right .my_img h3{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    position:relative;
+    font-size: 28px;
+}
+.imgsss img{
+    width: 200px;
+    height: auto;
+    background: white;
+    display: flexbox;
+}
+
+
+
+
+/* code xử lý effect animation */
+/* change color text */
+@keyframes ColorChange {
+    0% { color: #FF0000; }   /* Red */
+    4% { color: #FF7F00; }   /* Orange */
+    8% { color: #FFFF00; }   /* Yellow */
+    12% { color: #7FFF00; }  /* Chartreuse Green */
+    16% { color: #00FF00; }  /* Green */
+    20% { color: #00FF7F; }  /* Spring Green */
+    24% { color: #00FFFF; }  /* Cyan */
+    29% { color: #007FFF; }  /* Azure */
+    33% { color: #0000FF; }  /* Blue */
+    37% { color: #7F00FF; }  /* Violet */
+    41% { color: #8B00FF; }  /* Indigo */
+    45% { color: #FF00FF; }  /* Magenta */
+    50% { color: #FF007F; }  /* Rose */
+    54% { color: #FF4500; }  /* Orange Red */
+    58% { color: #FF1493; }  /* Deep Pink */
+    62% { color: #FF6347; }  /* Tomato */
+    66% { color: #FFD700; }  /* Gold */
+    70% { color: #ADFF2F; }  /* Green Yellow */
+    75% { color: #7FFFD4; }  /* Aquamarine */
+    79% { color: #40E0D0; }  /* Turquoise */
+    83% { color: #1E90FF; }  /* Dodger Blue */
+    87% { color: #BA55D3; }  /* Medium Orchid */
+    91% { color: #9400D3; }  /* Dark Violet */
+    95% { color: #FF69B4; }  /* Hot Pink */
+    100% { color: #FF0000; }  /* Red (again) */
+}
+/* change color text style rainbow */
+.rainbow-text h2:hover{
+    font-weight: bold;
+    background: linear-gradient(270deg, 
+        #FF5F6D, #FF7B6E, #FF996F, #FFB770, #FFD571, #FFF372, 
+        #E2FF73, #C5FF74, #A8FF75, #8BFF76, #6EFF77, #51FF78, 
+        #34FF79, #17FF7A, #00FF7B, #00E9A8, #00D2D3, #00BBFF, 
+        #009EFF, #007AFF, #0056FF, #0033FF, #0022FF, #3A1AFF, 
+        #7412FF, #AE0AFF, #E900FF, #FF00E2, #FF00C5, #FF00A8);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow-text 10s ease infinite;
+    background-size: 400%;
+}
+
+@keyframes rainbow-text {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
